@@ -87,7 +87,7 @@ THIRD_PARTY_APPS = [
     "sortedm2m",
     "bulk_update_or_create",
 ]
-LOCAL_APPS = ["project.users"]
+LOCAL_APPS = ["project.users", "project.organizations", "project.time_control"]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
