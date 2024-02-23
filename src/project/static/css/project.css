@@ -1,0 +1,47 @@
+/* These styles are generated from project.scss. */
+
+body {
+    background-color: #FFFFF0;
+}
+
+.alert-debug {
+    color: black;
+    background-color: white;
+    border-color: #d6e9c6;
+}
+
+.alert-error {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
+.navbar {
+    border-radius: 0 0 20px 20px;
+    background: #FFFFF0;
+    box-shadow: 5px 5px 10px #ccccc0,
+    -5px -5px 10px #ffffff;
+}
+
+.navbar-item:hover {
+    border-radius: 10px;
+    background: #FFFFF0;
+    box-shadow: 5px 5px 11px #c7c7bb,
+    -5px -5px 11px #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-item:active {
+    border-radius: 10px;
+    background: #FFFFF0;
+    box-shadow: inset 5px 5px 11px #c7c7bb,
+    inset -5px -5px 11px #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-box {
+    border-radius: 30px;
+    background: #FAF8F6;
+    box-shadow: 5px 5px 11px #6b6b6b,
+    -5px -5px 11px #ffffff;
+}
