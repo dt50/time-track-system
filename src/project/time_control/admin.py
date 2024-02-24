@@ -14,9 +14,20 @@ class TimeControlAdmin(DjangoQLSearchMixin, admin.ModelAdmin):
     )
 
     list_display: tuple = ("user", "status", "is_valid", "door")
-    list_filter: tuple = ("user__first_name", "user__last_name", "status", "door__number", "door__office__number",
-                          "door__office__floor__number", "update")
+    list_filter: tuple = (
+        "user__first_name",
+        "user__last_name",
+        "status",
+        "door__number",
+        "door__office__number",
+        "door__office__floor__number",
+        "update",
+    )
 
     list_per_page: int = 50
 
-    search_fields: tuple = ("user", "status", "door",)
+    search_fields: tuple = (
+        "user",
+        "status",
+        "door",
+    )

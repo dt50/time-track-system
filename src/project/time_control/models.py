@@ -1,21 +1,18 @@
 from django.contrib.auth import get_user_model
 from django.db import models
-from django.db.models import PROTECT, ForeignKey, BooleanField
+from django.db.models import PROTECT, BooleanField, ForeignKey
 from django.utils.translation import gettext as _
-from model_utils.fields import StatusField
 from model_utils import Choices
-from project.organizations.models import Door
+from model_utils.fields import StatusField
 
+from project.organizations.models import Door
 from project.utils.model_utils import BaseModel
 
 User = get_user_model()
 
 
 class TimeControl(BaseModel):
-    STATUS = Choices(
-        ('IN', _('In')),
-        ('OUT', _('Out'))
-    )
+    STATUS = Choices(("IN", _("In")), ("OUT", _("Out")))
 
     user = ForeignKey(User, on_delete=PROTECT, verbose_name=_("User account"))
 

@@ -1,6 +1,8 @@
 from django.contrib.auth.models import AbstractUser
+
 # from django.contrib.postgres.indexes import GinIndex, OpClass
 from django.db.models import CharField, EmailField, Index, ManyToManyField
+
 # from django.db.models.functions import Upper
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _

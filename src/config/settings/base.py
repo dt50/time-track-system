@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 APPS_DIR = BASE_DIR / "project"
 env = environ.Env()
 
-env.read_env(str(BASE_DIR / ".env"))
+env.read_env(str(BASE_DIR.parent / ".env"))
 
 # GENERAL
 # ------------------------------------------------------------------------------
